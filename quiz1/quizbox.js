@@ -50,7 +50,7 @@ var QuizOptions = function (_React$Component) {
             var data = JSON.parse(cookie);
             data[number] = value;
             cookie = JSON.stringify(data);
-            setCookie("quiz1", cookie);
+            document.cookie = "quiz1=" + cookie + ";path=/;";
         }
     }, {
         key: "update",
