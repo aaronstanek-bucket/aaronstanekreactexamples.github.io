@@ -5,6 +5,6 @@ QUIZDATA = {
         ["Triangles","math"],
         ["Flowers","nature"],
         ["Running Shoes","sports"],
-        ["Vegatables","food"]
+        ["Vegetables","food"]
     ]
 };
