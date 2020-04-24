@@ -8,9 +8,12 @@ function keyGen() {
 
 keyGen.value = BigInt(0);
 
+// StatsBox shows what percentage of responces
+// aligned with each answer category
 class StatsBox extends React.Component {
     constructor(props) {
         super(props);
+        // compute how many responces in each category
         var stats = {
             "math": 0,
             "nature": 0,
@@ -108,9 +111,13 @@ class DescriptionFood extends React.Component {
     }
 }
 
+// DescriptionBox decides which category descriptions to
+// display and then displays them
 class DescriptionBox extends React.Component {
     constructor(props) {
         super(props);
+        // duplicate code from above
+        // resolve with class inheritance
         var stats = {
             "math": 0,
             "nature": 0,
@@ -126,6 +133,7 @@ class DescriptionBox extends React.Component {
     }
     render() {
         var things = Object.keys(this.state.stats);
+        // things is an array of the answer categories
         var winners = [things[0]];
         for (let i = 1; i < things.length; i++) {
             if (this.state.stats[things[i]] < this.state.stats[winners[0]]) {
@@ -138,6 +146,8 @@ class DescriptionBox extends React.Component {
                 winners = [things[i]];
             }
         }
+        // winners is an array holding those answer categories
+        // with a maximal number of responces
         var output = [];
         for (let i = 0; i < winners.length; i++) {
             output.push(<hr key={keyGen()} />)
@@ -158,6 +168,9 @@ class DescriptionBox extends React.Component {
     }
 }
 
+// AnswerBox checks if all questions have been answered
+// if not, it generates a link to the skipped question
+// if yes, it shows the StatsBox and DescriptionBox
 class AnswerBox extends React.Component {
     constructor(props) {
         super(props);
@@ -168,6 +181,7 @@ class AnswerBox extends React.Component {
         var data = JSON.parse(cookie);
         for (let i = 1; i <= 5; i++) {
             if (!(i in data)) {
+                // question i is missing
                 this.state = {
                     "complete": false,
                     "link": i+".html"
