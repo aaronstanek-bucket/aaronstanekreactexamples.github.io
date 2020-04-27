@@ -1,0 +1,129 @@
+body {
+    margin: 0px;
+    border-width: 0px;
+    padding: 0px;
+    z-index: 0;
+}
+
+div {
+    margin: 0px;
+    border-width: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 0px;
+    border-width: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background_holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background {
+    /* https://www.pexels.com/photo/road-nature-trees-branches-38537/ */
+    margin: 0px;
+    border-width: 0px;
+    min-width: 110vw;
+    min-height: 110vh;
+    position: fixed;
+    top: 0vh;
+    left: 50vw;
+    transform: translate(-50%,0px);
+    z-index: -1;
+}
+
+.hpage {
+    display: none;
+}
+
+.page {
+    background-color: bisque;
+    width: 61.8%;
+    margin-left: 50%;
+    margin-bottom: 100vh;
+    transform: translate(-50%,0px);
+}
+
+.barTable {
+    display: table;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.barSubMenu {
+    width: 100%;
+}
+
+.barRow {
+    display: table-row;
+}
+
+.barCell {
+    display: table-cell;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    position: relative;
+}
+
+.barCellHighlight {
+    background-color: chocolate;
+}
+
+.barCell p {
+    font-weight: bold;
+    font-size: min(150%,2vw);
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-2vw,-1vw);
+    z-index: 1;
+}
+
+.maskBig {
+    height: fit-content;
+    min-height: 100%;
+}
+
+.barSubItem {
+    background-color: chocolate;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.barSubHighlight {
+    background-color: darkred;
+}
+
+.barSubSpace {
+    height: 5vw;
+}
+
+.cantsee {
+    display: none;
+}
+
+.hbar {
+    width: 80%;
+}
+
+.title {
+    font-size: 200%;
+    text-align: center;
+}
+
+.bodytext {
+    margin-left: 5%;
+    margin-right: 5%;
+}
