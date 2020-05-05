@@ -1,0 +1,8 @@
+tree:
+https://www.pexels.com/photo/nature-sky-clouds-field-9198/
+
+duck:
+https://www.pexels.com/photo/duckling-on-black-soil-during-daytime-162140/
+
+happy man:
+https://www.pexels.com/photo/man-in-red-crew-neck-sweatshirt-photography-941693/
