@@ -2,6 +2,7 @@
 
 function databaseRead(callback) {
     var cookie = getCookie();
+    console.log("databaseRead",cookie);
     if (typeof cookie.name != "string") {
         setTimeout(callback,0,null);
         return;

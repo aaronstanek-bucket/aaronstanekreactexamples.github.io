@@ -19,5 +19,6 @@ function getCookie() {
 
 function setCookie(value) {
   var s = JSON.stringify(value);
+  console.log("setting cookie",s);
   document.cookie = "page2=" + s + ";path=/;";
 }
