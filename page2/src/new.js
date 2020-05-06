@@ -70,7 +70,6 @@ class Box extends React.Component {
         databaseRead(callback);
     }
     callback1(text) {
-        console.log("callback1",text);
         if (typeof text != "string") {
             this.memo("Database Error");
             return;
@@ -88,7 +87,6 @@ class Box extends React.Component {
         databaseWrite(callback);
     }
     callback2(text) {
-        console.log("callback2",text);
         if (typeof text != "string") {
             this.memo("Database Error");
             return;

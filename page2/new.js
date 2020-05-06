@@ -141,7 +141,6 @@ var Box = function (_React$Component2) {
         value: function callback1(text) {
             var _this5 = this;
 
-            console.log("callback1", text);
             if (typeof text != "string") {
                 this.memo("Database Error");
                 return;
@@ -163,7 +162,6 @@ var Box = function (_React$Component2) {
     }, {
         key: "callback2",
         value: function callback2(text) {
-            console.log("callback2", text);
             if (typeof text != "string") {
                 this.memo("Database Error");
                 return;
