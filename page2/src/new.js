@@ -83,6 +83,7 @@ class Box extends React.Component {
             this.memo("That username is already taken.");
             return;
         }
+        setCookie({"name":this.state.username,"info":{"exists":true}});
         var callback = (text) => {this.callback2(text);};
         databaseWrite(callback);
     }

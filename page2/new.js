@@ -154,6 +154,7 @@ var Box = function (_React$Component2) {
                 this.memo("That username is already taken.");
                 return;
             }
+            setCookie({ "name": this.state.username, "info": { "exists": true } });
             var callback = function callback(text) {
                 _this5.callback2(text);
             };
