@@ -5,5 +5,5 @@ function gotoNew() {
 }
 
 function gotoLogin() {
-    window.location = "login.html";
+    window.location = "reenter.html";
 }
